@@ -1,0 +1,446 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>SkillForge Academy | Online Courses &amp; Career Tracks</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Fraunces:opsz,wght@9..144,600;9..144,700&family=Plus+Jakarta+Sans:wght@400;500;600;700&display=swap" rel="stylesheet" />
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+
+  <!-- Header & Navigation -->
+  <header>
+    <div class="container nav-wrapper">
+      <a href="#top" class="brand">Skill<span>Forge</span></a>
+      <button id="menuToggle" class="hamburger" aria-label="Toggle Navigation" aria-expanded="false">
+        <span></span>
+        <span></span>
+        <span></span>
+      </button>
+      <ul id="navMenu" class="nav-links">
+        <li><a href="#categories">Categories</a></li>
+        <li><a href="#courses">Courses</a></li>
+        <li><a href="#instructors">Instructors</a></li>
+        <li><a href="#reviews">Reviews</a></li>
+        <li><a href="#enroll" class="nav-cta">Enroll Now</a></li>
+      </ul>
+    </div>
+  </header>
+
+  <!-- Hero Section -->
+  <section id="top" class="hero">
+    <div class="container hero-grid">
+      <div class="hero-copy">
+        <span class="pill">Project-Based Online Learning</span>
+        <h1>Build Real Skills With Hands-On Courses</h1>
+        <p>Learn web development, UI/UX design, data analytics, and cloud essentials from industry practitioners with structured roadmaps and mentor feedback.</p>
+        <div class="hero-actions">
+          <a href="#courses" class="btn btn-primary">Browse Courses</a>
+          <a href="#enroll" class="btn btn-secondary">Start Enrollment</a>
+        </div>
+        <div class="hero-metrics">
+          <div>
+            <strong>18,500+</strong>
+            <span>Active Learners</span>
+          </div>
+          <div>
+            <strong>4.9 &#9733;</strong>
+            <span>Average Course Rating</span>
+          </div>
+          <div>
+            <strong>45+</strong>
+            <span>Guided Real Projects</span>
+          </div>
+        </div>
+      </div>
+
+      <div class="hero-card">
+        <img src="https://images.unsplash.com/photo-1522202176988-66273c2fd55f?auto=format&fit=crop&w=1000&q=80" alt="Students collaborating on a coding and design project" />
+        <div class="hero-card-caption">
+          <span class="badge-soft">Flexible Self-Paced + Weekly Live Q&amp;A</span>
+          <h3>Structured From Basics to Capstone</h3>
+          <p>Every course includes bite-sized lessons, downloadable code starters, and portfolio-ready projects.</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Course Categories -->
+  <section id="categories" class="section">
+    <div class="container">
+      <div class="section-header">
+        <span class="tag">Learning Paths</span>
+        <h2>Explore Course Categories</h2>
+        <p>Filter courses by track or explore all domains designed for beginners and aspiring professionals.</p>
+      </div>
+
+      <div class="category-grid" role="group" aria-label="Course Categories">
+        <button class="category-card active" data-filter="all">
+          <span class="cat-icon">&#9734;</span>
+          <h3>All Courses</h3>
+          <p>6 flagship courses across web, design, data, and cloud.</p>
+        </button>
+
+        <button class="category-card" data-filter="web">
+          <span class="cat-icon">&lt;/&gt;</span>
+          <h3>Web Development</h3>
+          <p>HTML5, CSS3, modern layouts, JavaScript, and responsive UI.</p>
+        </button>
+
+        <button class="category-card" data-filter="design">
+          <span class="cat-icon">&#9998;</span>
+          <h3>UI/UX &amp; Visual Design</h3>
+          <p>Typography, color systems, wireframing, and interactive prototypes.</p>
+        </button>
+
+        <button class="category-card" data-filter="data">
+          <span class="cat-icon">&#9638;</span>
+          <h3>Data &amp; Cloud</h3>
+          <p>Python data analysis, SQL querying, dashboards, and deployment.</p>
+        </button>
+      </div>
+    </div>
+  </section>
+
+  <!-- Course Cards & Course Information -->
+  <section id="courses" class="section section-alt">
+    <div class="container">
+      <div class="section-header">
+        <span class="tag">Featured Catalog</span>
+        <h2>Popular Courses &amp; Syllabus Details</h2>
+        <p>Clear durations, skill levels, project deliverables, and transparent pricing.</p>
+      </div>
+
+      <div class="courses-grid">
+        <!-- Course 1 -->
+        <article class="course-card" data-category="web">
+          <div class="course-thumb">
+            <img src="https://images.unsplash.com/photo-1498050108023-c5249f4df085?auto=format&fit=crop&w=900&q=80" alt="Frontend Web Foundations course workspace" />
+            <span class="level-tag">Beginner Friendly</span>
+          </div>
+          <div class="course-body">
+            <div class="course-meta">
+              <span>Web Development</span>
+              <span>8 Weeks &bull; 36 Lessons</span>
+            </div>
+            <h3>Modern HTML &amp; CSS Web Design</h3>
+            <p>Master semantic HTML, Flexbox, CSS Grid, responsive breakpoints, and component styling through real landing pages.</p>
+            <ul class="course-info-list">
+              <li><strong>Deliverable:</strong> 3 Responsive Multi-Section Websites</li>
+              <li><strong>Instructor:</strong> Rohan Nair</li>
+            </ul>
+            <div class="course-footer">
+              <div class="price-box">
+                <span class="price">$49</span>
+                <span class="rating">&#9733; 4.9 (620)</span>
+              </div>
+              <a href="#enroll" class="btn btn-sm btn-primary select-course-btn" data-course="Modern HTML & CSS Web Design ($49)">Enroll</a>
+            </div>
+          </div>
+        </article>
+
+        <!-- Course 2 -->
+        <article class="course-card" data-category="web">
+          <div class="course-thumb">
+            <img src="https://images.unsplash.com/photo-1555066931-4365d14bab8c?auto=format&fit=crop&w=900&q=80" alt="Interactive JavaScript code on screen" />
+            <span class="level-tag">Intermediate</span>
+          </div>
+          <div class="course-body">
+            <div class="course-meta">
+              <span>Web Development</span>
+              <span>10 Weeks &bull; 44 Lessons</span>
+            </div>
+            <h3>Interactive JavaScript &amp; DOM Apps</h3>
+            <p>Build dynamic interfaces, form validators, filters, local storage apps, and API-driven dashboards with clean JavaScript.</p>
+            <ul class="course-info-list">
+              <li><strong>Deliverable:</strong> Task &amp; Course Planner Web App</li>
+              <li><strong>Instructor:</strong> Rohan Nair</li>
+            </ul>
+            <div class="course-footer">
+              <div class="price-box">
+                <span class="price">$69</span>
+                <span class="rating">&#9733; 4.8 (480)</span>
+              </div>
+              <a href="#enroll" class="btn btn-sm btn-primary select-course-btn" data-course="Interactive JavaScript & DOM Apps ($69)">Enroll</a>
+            </div>
+          </div>
+        </article>
+
+        <!-- Course 3 -->
+        <article class="course-card" data-category="design">
+          <div class="course-thumb">
+            <img src="https://images.unsplash.com/photo-1561070791-2526d30994b5?auto=format&fit=crop&w=900&q=80" alt="UI UX design wireframes and color palette" />
+            <span class="level-tag">Beginner Friendly</span>
+          </div>
+          <div class="course-body">
+            <div class="course-meta">
+              <span>UI/UX &amp; Visual Design</span>
+              <span>6 Weeks &bull; 28 Lessons</span>
+            </div>
+            <h3>Visual Hierarchy &amp; UI Design Systems</h3>
+            <p>Learn contrast, spacing scales, typography pairing, card layouts, and accessible UI components for web and mobile.</p>
+            <ul class="course-info-list">
+              <li><strong>Deliverable:</strong> Complete UI Kit &amp; Case Study</li>
+              <li><strong>Instructor:</strong> Clara Mendes</li>
+            </ul>
+            <div class="course-footer">
+              <div class="price-box">
+                <span class="price">$54</span>
+                <span class="rating">&#9733; 4.9 (390)</span>
+              </div>
+              <a href="#enroll" class="btn btn-sm btn-primary select-course-btn" data-course="Visual Hierarchy & UI Design Systems ($54)">Enroll</a>
+            </div>
+          </div>
+        </article>
+
+        <!-- Course 4 -->
+        <article class="course-card" data-category="design">
+          <div class="course-thumb">
+            <img src="https://images.unsplash.com/photo-1581291518857-4e27b48ff24e?auto=format&fit=crop&w=900&q=80" alt="UX prototyping sketches and user flow" />
+            <span class="level-tag">Intermediate</span>
+          </div>
+          <div class="course-body">
+            <div class="course-meta">
+              <span>UI/UX &amp; Visual Design</span>
+              <span>7 Weeks &bull; 32 Lessons</span>
+            </div>
+            <h3>User Research &amp; Interactive Prototyping</h3>
+            <p>Conduct usability reviews, map user journeys, build clickable flows, and turn feedback into refined product screens.</p>
+            <ul class="course-info-list">
+              <li><strong>Deliverable:</strong> Mobile App Prototype &amp; Flow</li>
+              <li><strong>Instructor:</strong> Clara Mendes</li>
+            </ul>
+            <div class="course-footer">
+              <div class="price-box">
+                <span class="price">$59</span>
+                <span class="rating">&#9733; 4.8 (310)</span>
+              </div>
+              <a href="#enroll" class="btn btn-sm btn-primary select-course-btn" data-course="User Research & Interactive Prototyping ($59)">Enroll</a>
+            </div>
+          </div>
+        </article>
+
+        <!-- Course 5 -->
+        <article class="course-card" data-category="data">
+          <div class="course-thumb">
+            <img src="https://images.unsplash.com/photo-1551288049-bebda4e38f71?auto=format&fit=crop&w=900&q=80" alt="Data analytics charts and metrics dashboard" />
+            <span class="level-tag">Beginner Friendly</span>
+          </div>
+          <div class="course-body">
+            <div class="course-meta">
+              <span>Data &amp; Cloud</span>
+              <span>8 Weeks &bull; 38 Lessons</span>
+            </div>
+            <h3>Python Data Analysis &amp; Visualization</h3>
+            <p>Clean datasets, summarize trends, write reusable scripts, and present clear charts using practical real-world datasets.</p>
+            <ul class="course-info-list">
+              <li><strong>Deliverable:</strong> 2 Analytical Reports &amp; Notebooks</li>
+              <li><strong>Instructor:</strong> David Okafor</li>
+            </ul>
+            <div class="course-footer">
+              <div class="price-box">
+                <span class="price">$64</span>
+                <span class="rating">&#9733; 4.9 (540)</span>
+              </div>
+              <a href="#enroll" class="btn btn-sm btn-primary select-course-btn" data-course="Python Data Analysis & Visualization ($64)">Enroll</a>
+            </div>
+          </div>
+        </article>
+
+        <!-- Course 6 -->
+        <article class="course-card" data-category="data">
+          <div class="course-thumb">
+            <img src="https://images.unsplash.com/photo-1451187580459-43490279c0fa?auto=format&fit=crop&w=900&q=80" alt="Cloud infrastructure and global network nodes" />
+            <span class="level-tag">Intermediate</span>
+          </div>
+          <div class="course-body">
+            <div class="course-meta">
+              <span>Data &amp; Cloud</span>
+              <span>6 Weeks &bull; 26 Lessons</span>
+            </div>
+            <h3>Git, GitHub &amp; Static Cloud Hosting</h3>
+            <p>Manage version history, collaborate with branches and pull requests, and deploy fast static websites with custom domains.</p>
+            <ul class="course-info-list">
+              <li><strong>Deliverable:</strong> Live Hosted Portfolio &amp; Repo</li>
+              <li><strong>Instructor:</strong> David Okafor</li>
+            </ul>
+            <div class="course-footer">
+              <div class="price-box">
+                <span class="price">$39</span>
+                <span class="rating">&#9733; 5.0 (710)</span>
+              </div>
+              <a href="#enroll" class="btn btn-sm btn-primary select-course-btn" data-course="Git, GitHub & Static Cloud Hosting ($39)">Enroll</a>
+            </div>
+          </div>
+        </article>
+      </div>
+    </div>
+  </section>
+
+  <!-- Instructor Profiles -->
+  <section id="instructors" class="section">
+    <div class="container">
+      <div class="section-header">
+        <span class="tag">Learn From Mentors</span>
+        <h2>Meet Your Instructors</h2>
+        <p>Experienced engineers, designers, and analysts dedicated to clear, step-by-step teaching.</p>
+      </div>
+
+      <div class="instructors-grid">
+        <article class="instructor-card">
+          <img src="https://images.unsplash.com/photo-1507003211169-0a1dd7228f2d?auto=format&fit=crop&w=600&q=80" alt="Rohan Nair portrait" />
+          <h3>Rohan Nair</h3>
+          <span class="role">Senior Front-End Engineer &bull; 9+ Yrs Exp</span>
+          <p>Specializes in accessible UI architecture, responsive CSS systems, and practical JavaScript problem-solving.</p>
+        </article>
+
+        <article class="instructor-card">
+          <img src="https://images.unsplash.com/photo-1573496359142-b8d87734a5a2?auto=format&fit=crop&w=600&q=80" alt="Clara Mendes portrait" />
+          <h3>Clara Mendes</h3>
+          <span class="role">Lead Product Designer &bull; 8+ Yrs Exp</span>
+          <p>Helps learners turn rough ideas into clean visual systems, intuitive layouts, and compelling portfolio stories.</p>
+        </article>
+
+        <article class="instructor-card">
+          <img src="https://images.unsplash.com/photo-1500648767791-00dcc994a43e?auto=format&fit=crop&w=600&q=80" alt="David Okafor portrait" />
+          <h3>David Okafor</h3>
+          <span class="role">Data &amp; Cloud Mentor &bull; 10+ Yrs Exp</span>
+          <p>Guides students through data workflows, version control habits, and reliable production deployments.</p>
+        </article>
+      </div>
+    </div>
+  </section>
+
+  <!-- Student Reviews -->
+  <section id="reviews" class="section section-alt">
+    <div class="container">
+      <div class="section-header">
+        <span class="tag">Student Outcomes</span>
+        <h2>What Our Students Say</h2>
+        <p>Real feedback from learners building portfolios and leveling up their technical skills.</p>
+      </div>
+
+      <div class="reviews-grid">
+        <article class="review-card">
+          <div class="stars">&#9733;&#9733;&#9733;&#9733;&#9733;</div>
+          <p>"I started with zero CSS Grid confidence. By week four I built a responsive layout on my own and published it cleanly."</p>
+          <div class="student-info">
+            <span class="avatar">KV</span>
+            <div>
+              <strong>Karthik Verma</strong>
+              <span>Web Development Track</span>
+            </div>
+          </div>
+        </article>
+
+        <article class="review-card">
+          <div class="stars">&#9733;&#9733;&#9733;&#9733;&#9733;</div>
+          <p>"Clara's breakdown of spacing, color contrast, and typography made my design projects look structured and intentional."</p>
+          <div class="student-info">
+            <span class="avatar">NM</span>
+            <div>
+              <strong>Neha Menon</strong>
+              <span>UI/UX Design Track</span>
+            </div>
+          </div>
+        </article>
+
+        <article class="review-card">
+          <div class="stars">&#9733;&#9733;&#9733;&#9733;&#9733;</div>
+          <p>"Short lessons with practical exercises instead of fluff. The Git &amp; hosting guide saved me hours during my first deployment."</p>
+          <div class="student-info">
+            <span class="avatar">ST</span>
+            <div>
+              <strong>Samir Tariq</strong>
+              <span>Data &amp; Cloud Track</span>
+            </div>
+          </div>
+        </article>
+      </div>
+    </div>
+  </section>
+
+  <!-- Course Information & Enrollment Section -->
+  <section id="enroll" class="section">
+    <div class="container">
+      <div class="section-header">
+        <span class="tag">Get Started Today</span>
+        <h2>Course Information &amp; Enrollment</h2>
+        <p>Reserve your seat in any course and receive instant syllabus access and study reminders.</p>
+      </div>
+
+      <div class="enroll-grid">
+        <div class="info-panel">
+          <h3>What Every Enrollment Includes</h3>
+          <ul class="benefits-list">
+            <li><strong>Lifetime Lesson Access:</strong> Revisit video walkthroughs, notes, and code examples anytime.</li>
+            <li><strong>Hands-On Projects:</strong> Step-by-step briefs designed for student portfolios and GitHub showcases.</li>
+            <li><strong>Weekly Office Hours:</strong> Ask questions on layout bugs, logic, or career next steps.</li>
+            <li><strong>Certificate of Completion:</strong> Awarded upon finishing core modules and capstone submission.</li>
+          </ul>
+          <div class="support-box">
+            <strong>Need Help Choosing a Course?</strong>
+            <p>Email <span>admissions@skillforge.edu</span> or select a course card above to auto-fill your form.</p>
+          </div>
+        </div>
+
+        <form id="enrollForm" class="enroll-form">
+          <div class="form-group">
+            <label for="studentName">Full Name</label>
+            <input type="text" id="studentName" name="studentName" placeholder="Enter your full name" required />
+          </div>
+
+          <div class="form-group">
+            <label for="studentEmail">Email Address</label>
+            <input type="email" id="studentEmail" name="studentEmail" placeholder="you@example.com" required />
+          </div>
+
+          <div class="form-row">
+            <div class="form-group">
+              <label for="courseSelect">Select Course</label>
+              <select id="courseSelect" name="courseSelect">
+                <option value="Modern HTML & CSS Web Design ($49)">Modern HTML &amp; CSS Web Design ($49)</option>
+                <option value="Interactive JavaScript & DOM Apps ($69)">Interactive JavaScript &amp; DOM Apps ($69)</option>
+                <option value="Visual Hierarchy & UI Design Systems ($54)">Visual Hierarchy &amp; UI Design Systems ($54)</option>
+                <option value="User Research & Interactive Prototyping ($59)">User Research &amp; Interactive Prototyping ($59)</option>
+                <option value="Python Data Analysis & Visualization ($64)">Python Data Analysis &amp; Visualization ($64)</option>
+                <option value="Git, GitHub & Static Cloud Hosting ($39)">Git, GitHub &amp; Static Cloud Hosting ($39)</option>
+              </select>
+            </div>
+
+            <div class="form-group">
+              <label for="paceSelect">Preferred Pace</label>
+              <select id="paceSelect" name="paceSelect">
+                <option value="Self-Paced">Self-Paced</option>
+                <option value="Part-Time (6 hrs/wk)">Part-Time (6 hrs/wk)</option>
+                <option value="Intensive (12 hrs/wk)">Intensive (12 hrs/wk)</option>
+              </select>
+            </div>
+          </div>
+
+          <div class="form-group">
+            <label for="goalNote">Learning Goal (Optional)</label>
+            <textarea id="goalNote" name="goalNote" rows="3" placeholder="Share what you hope to build or learn..."></textarea>
+          </div>
+
+          <button type="submit" class="btn btn-primary full-width">Complete Enrollment Request</button>
+          <div id="enrollMessage" class="enroll-message" role="status" aria-live="polite"></div>
+        </form>
+      </div>
+    </div>
+  </section>
+
+  <!-- Footer -->
+  <footer>
+    <div class="container footer-inner">
+      <a href="#top" class="brand">Skill<span>Forge</span></a>
+      <p>&copy; 2026 SkillForge Academy. All rights reserved.</p>
+    </div>
+  </footer>
+
+  <script src="script.js"></script>
+</body>
+</html>
